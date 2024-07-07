@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { auth, db } from "../firebase"; // Asegúrate de importar tu instancia de auth desde firebase.js
-import { collection, getDocs, query, orderBy, deleteDoc, doc, onSnapshot } from "firebase/firestore";
+import { collection, getDocs, query, orderBy, deleteDoc, doc, onSnapshot, updateDoc } from "firebase/firestore";
 import { differenceInMonths } from 'date-fns';
 
 function Record() {
@@ -28,10 +28,29 @@ function Record() {
   };
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((user) => {
+    const unsubscribe = auth.onAuthStateChanged(async (user) => {
       if (user) {
         const lastSignInTime = user.metadata.lastSignInTime;
         setLastLogin(new Date(lastSignInTime));
+        
+        // Update user status to active when they sign in
+        await updateDoc(doc(db, "users", user.uid), {
+          disabled: false,
+        });
+
+        // Register the beforeunload event to update user status to inactive
+        const handleBeforeUnload = async (event) => {
+          event.preventDefault();
+          await updateDoc(doc(db, "users", user.uid), {
+            disabled: true,
+          });
+        };
+
+        window.addEventListener("beforeunload", handleBeforeUnload);
+
+        return () => {
+          window.removeEventListener("beforeunload", handleBeforeUnload);
+        };
       } else {
         setLastLogin(null);
       }

@@ -132,7 +132,7 @@ function AppWeb() {
               />
               {/* Ocultar el nombre en dispositivos móviles */}
               <span className="hidden md:inline text-gray-900 dark:text-gray-100">
-                {texts.app.welcome} {user?.displayName || "User"}
+                {texts.app.welcome} {user?.displayName || user?.email}
               </span>
             </div>
             <button onClick={handleSignout}>
