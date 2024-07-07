@@ -23,6 +23,7 @@
     "aos": "^2.3.4",
     "axios": "^1.7.2",
     "crypto-js": "^4.2.0",
+    "date-fns": "^3.6.0",
     "firebase": "^10.12.2",
     "flowbite": "^2.3.0",
     "heroicons": "^2.1.4",
