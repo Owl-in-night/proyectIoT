@@ -1,0 +1,153 @@
+{
+  "sidebar": {
+    "signIn": "登入",
+    "signUp": "報到",
+    "home": "開始",
+    "help": "援助",
+    "aboutUs": "關於我們",
+    "contactUs": "聯絡我們",
+    "license": "執照",
+    "manual": "手動的",
+    "privacyPolicy": "隱私權政策",
+    "record": "記錄",
+    "settings": "設定",
+    "darkMode": "深色模式",
+    "lightMode": "清晰模式",
+    "translate": "翻譯",
+    "chinese": "中國人",
+    "french": "法語",
+    "hindi": "印地語",
+    "spanish": "西班牙語",
+    "english": "英語"
+  },
+  "app": {
+    "electronicLock": "電子鎖",
+    "lock": "鎖",
+    "unlock": "解鎖",
+    "timeDateIncome": "時間和日期收入",
+    "timeDateEgress": "時間和日期出口",
+    "on": "開",
+    "off": "關",
+    "loading": "加載中",
+    "welcome": "歡迎!",
+    "error": "啟動服務時出現問題。請稍後再試。"
+  },
+  "footer": {
+    "copyright1": "© 2024 ",
+    "copyright2":"Electronic Lock™.",
+    "copyright3":" 保留所有权利。",
+    "aboutUs": "关于我们",
+    "privacyPolicy": "隐私政策",
+    "license": "许可证",
+    "contactUs": "联系我们"
+  },
+  "navbar": {
+      "signIn": "登入",
+      "signUp": "報到",
+      "home": "開始",
+      "help": "援助",
+      "aboutUs": "關於我們",
+      "contactUs": "聯絡我們",
+      "license": "執照",
+      "manual": "手動的",
+      "privacyPolicy": "隱私權政策",
+      "record": "記錄",
+      "settings": "設定",
+      "darkMode": "深色模式",
+      "lightMode": "清晰模式",
+      "translate": "翻譯",
+      "chinese": "中國人",
+      "french": "法語",
+      "hindi": "印地語",
+      "spanish": "西班牙語",
+      "english": "英語"
+    },
+    "aboutus": {
+      "aboutusT": "關於我們",
+      "aboutusText": "我們危地馬拉山谷大學的學生很高興展示我們的電腦專案電子鎖。該系統代表了我們致力於提供安全性和可訪問性方面的先進解決方案。",
+      "team":"我们的团队",
+      "positionOne":"首席执行官 (Shǒuxí zhíxíng guān)",
+      "positionTwo":"开发人员 (Kāifā rényuán)",
+      "positionThree":"开发人员 (Kāifā rényuán)",
+      "teamButton":"看看团队",
+      "up":"增加"
+    },
+    "contactus": {
+      "contact":"聯絡我們",
+      "name":"姓名",
+      "email":"郵件",
+      "subject":"事務",
+      "message":"資訊",
+      "sendmessage":"傳訊息"
+    },
+    "record":{
+      "record":"記錄",
+      "timeDateIncome": "時間和日期收入",
+      "timeDateEgress": "時間和日期出口"
+    },
+    "copyR": {
+      "copyright": "Copyright",
+      "part1":"网络应用程序《电子锁》的内容受版权保护。《电子锁》是一种创新的数字解决方案，由虚构大学的学生开发。本通知规定了您使用和访问《电子锁》提供的内容和服务的条款。版权：与《电子锁》相关的所有版权和其他知识产权归虚构大学的开发者和创作者所有。商标：名称“电子锁”及其相关标志是该应用程序的商标，由开发者拥有。内容使用：仅允许个人非商业用途查看、下载和复制《电子锁》的内容。未经版权所有者明确许可，禁止修改、重新分发或复制内容。免责声明：《电子锁》的开发者不对本平台提供的内容或服务的不当或非法使用承担责任。隐私政策：有关在《电子锁》上如何收集、使用和保护您的个人信息的更多信息，请参阅我们的隐私政策。联系方式：如果您对本版权声明有任何疑问或希望请求额外的使用权限，请访问 www.uvg.edu.gt 联系我们。最后更新日期：本版权声明于2024年6月17日进行了最后更新。"
+    }
+    ,
+    "license": {
+      "license":"许可",
+      "part1":"本网站在危地马拉瓜地马拉大学的许可和授权下运营。保留所有权利。",
+      "part2":"授权声明: ",
+      "part3":"瓜地马拉瓜地马拉大学已经明确授权在本网站使用其名称和机构标识。此授权包括但不限于瓜地马拉大学品牌的视觉表示以及在适当上下文中使用与该机构相关的信息。",
+      "part4":"知识产权：",
+      "part5":"除非另有说明，否则在本网站上使用的瓜地马拉瓜地马拉大学品牌和内容的所有知识产权均为瓜地马拉瓜地马拉大学的专属所有。未经瓜地马拉瓜地马拉大学事先书面授权，不得使用、复制或分发本网站的任何内容，除非法律明确允许。",
+      "part6":"责任声明：",
+      "part7":"瓜地马拉瓜地马拉大学对本网站上的内容或观点不承担责任，这些内容和观点由其管理者和作者独立负责。",
+      "part8":"联系方式：",
+      "part9":"如有关于本许可声明的任何问题或需要额外授权，请联系：",
+      "part10":"Universidad del Valle de Guatemala https://www.uvg.edu.gt/ INFO@UVG.EDU.GT PBX: 2507-1500 / 2364-0336",
+      "part11":"最后更新时间：",
+      "part12":"本许可声明的最后更新时间为 1/07/2024。"
+    },
+    "manual": {
+      "title1": "步骤1：欢迎",
+      "description1": "这是一个简单的指南，介绍如何在实验室中使用应用程序。",
+      "title2": "步骤2：门控制",
+      "description2": "按下锁定按钮以打开电子门，所有学生进入后不要忘记关闭门。",
+      "title3": "步骤3：灯光控制",
+      "description3": "使用灯光按钮控制前端（A）、后端（B）和LED灯带（C）的灯光开关。",
+      "title4": "步骤4：完成",
+      "description4": "您已完成逐步指南。",
+      "title5":"API",
+      "description5": "完成后，您可以查看我们的文档，了解项目的构建。",
+      "previous": "上一步",
+      "next": "下一步",
+      "close": "关闭",
+      "API":"API：数据结构",
+      "MF":"方法/功能",
+      "Description":"描述"
+    }
+    ,
+    "privacyp": {
+      "policyp":"隐私政策",
+       "part1":"本电子实验室及其工具、设备和/或内容，以及所有附件，均为机密使用，可能包含特权信息，仅供收件人、用户和/或利益相关者独家处理。如果您因错误收到本实验室的任何信息，请勿复制、分发或执行任何相关操作，因为这是完全禁止的。请立即通知发件人和/或负责人，并立即从系统中删除。本实验室工作产生的任何观点均由其作者独立承担责任，并不一定得到或得到此管理部门的支持。通过此信息，此管理部门不承担任何义务，也不对其内容负责。同样，本实验室的开发人员不对此使用不当、未遵守所述指令和规则和/或犯罪行为承担任何责任，使用和/或进入本实验室、其设备、Web 应用程序和其他组件的个人承担直接责任。根据适用的国家和国际法律，本电子实验室明确声明保留对任何非法访问（直接、间接、通过第三方、内部和/或外部）以及破坏其安全性的行为采取相应法律行动的权利。"
+    }
+    ,
+    "signin": {
+      "signIn": "登录",
+      "emailLabel": "邮箱",
+      "passwordLabel": "密码",
+      "emailPlaceholder": "youremail@uvg.edu.gt",
+      "signInButton": "登录",
+      "forgotPassword": "忘记密码？",
+      "noAccount": "还没有账号？",
+      "signInWithGoogle": "使用谷歌登录",
+      "resetPasswordEmailSent": "我们已经发送了包含重置密码链接的电子邮件",
+      "enterEmail": "请输入您的邮箱",
+      "emailDomainError": "仅允许使用 @uvg.edu.gt 结尾的邮箱进行登录或注册"
+    },
+    "signup": {
+      "signUp": "注册",
+      "emailLabel": "邮箱",
+      "passwordLabel": "密码",
+      "emailPlaceholder": "youremail@uvg.edu.gt",
+      "signUpButton": "注册",
+      "haveAccount": "已经有账号？"
+    }
+}

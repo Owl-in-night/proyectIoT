@@ -1,0 +1,153 @@
+{
+  "sidebar": {
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "home": "Home",
+    "help": "Help",
+    "aboutUs": "About us",
+    "contactUs": "Contact us",
+    "license": "License",
+    "manual": "Manual",
+    "privacyPolicy": "Privacy policy",
+    "record": "Record",
+    "settings": "Settings",
+    "darkMode": "Dark mode",
+    "lightMode": "Light mode",
+    "translate": "Translate",
+    "chinese": "Chinese",
+    "french": "French",
+    "hindi": "Hindi",
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "app":{
+    "electronicLock": "Electronic Lock",
+    "lock": "Lock",
+    "unlock": "Unlock",
+    "timeDateIncome": "Time & Date Income",
+    "timeDateEgress": "Time & Date Egress",
+    "on": "On",
+    "off": "Off",
+    "loading": "Loading",
+    "welcome": "Welcome!",
+    "error": "There was a problem starting the service. Please try again later."
+  },
+  "footer": {
+    "copyright1": "© 2024 ",
+    "copyright2":"Electronic Lock™.",
+    "copyright3":" All Rights Reserved. ",
+    "aboutUs": "About us",
+    "privacyPolicy": "Privacy Policy",
+    "license": "License",
+    "contactUs": "Contact us"
+  },
+  "navbar": {
+      "signIn": "Sign in",
+      "signUp": "Sign up",
+      "home": "Home",
+      "help": "Help",
+      "aboutUs": "About us",
+      "contactUs": "Contact us",
+      "license": "License",
+      "manual": "Manual",
+      "privacyPolicy": "Privacy policy",
+      "record": "Record",
+      "settings": "Settings",
+      "darkMode": "Dark mode",
+      "lightMode": "Light mode",
+      "translate": "Translate",
+      "chinese": "Chinese",
+      "french": "French",
+      "hindi": "Hindi",
+      "spanish": "Spanish",
+      "english": "English"
+    },
+    "aboutus": {
+      "aboutusT":"About us",
+      "aboutusText":"We are students from the University of Valle de Guatemala and are excited to present Electronic Lock, our computer project. This system represents our dedication to providing an advanced solution in security and accessibility.",
+      "team":"Our team",
+      "positionOne":"CEO (Chief Executive Officer)",
+      "positionTwo":"Developer",
+      "positionThree":"Developer",
+      "teamButton":"See the team",
+      "up":"Up"
+    },
+    "contactus": {
+      "contact":"Contact Us",
+      "name":"Name",
+      "email":"Mail",
+      "subject":"Affair",
+      "message":"Message",
+      "sendmessage":"Send Message"
+    },
+    "record":{
+      "record":"Record",
+      "timeDateIncome": "Time & Date Income",
+      "timeDateEgress": "Time & Date Egress"
+    },
+    "copyR": {
+      "copyright":"Copyright",
+      "part1":"The content of the web application 'Electronic Lock' is protected by copyright. 'Electronic Lock' is an innovative digital solution developed by students of Imaginary University. This notice establishes the terms under which you may use and access the content and services offered by 'Electronic Lock'. Copyright: All copyright and other intellectual property rights in relation to 'Electronic Lock' are owned by the developers and creators of the application, students of Imaginary University. Trademarks: The name 'Electronic Lock' and its associated logo are trademarks owned by the developers of the application. Use of Content: Viewing, downloading, and copying content from 'Electronic Lock' is permitted for personal, non-commercial use only. Any modification, redistribution, or reproduction of the content without explicit permission from the copyright owners is prohibited. Disclaimer of Liability: The developers of 'Electronic Lock' are not liable for any inappropriate or illegal use of the content or services offered on this platform. Privacy Policy: For more information on how your personal information is collected, used, and protected on 'Electronic Lock', please refer to our Privacy Policy. Contact: If you have questions regarding this copyright notice or wish to request additional usage permissions, please contact us at www.uvg.edu.gt. Last Updated: This copyright notice was last updated on June 17, 2024."
+    }
+    ,
+    "license": {
+      "license":"License",
+      "part1":"This website is operated under license and authorization from the Universidad del Valle de Guatemala. All rights reserved.",
+      "part2":"Authorization Statement: ",
+      "part3":"Universidad del Valle de Guatemala (UVG) has granted explicit permission for the use of its name and institutional identity on this website. This authorization includes, but is not limited to, the visual representation of the UVG brand and the use of institution-related information in appropriate contexts.",
+      "part4":"Intellectual Property: ",
+      "part5":"All intellectual property rights related to the Universidad del Valle de Guatemala brand and content used on this website are the exclusive property of UVG, unless otherwise stated. No content on this website may be used, copied, or distributed without prior written permission from UVG, except where expressly allowed by law.",
+      "part6":"Disclaimer: ",
+      "part7":"Universidad del Valle de Guatemala is not responsible for the content or opinions expressed on this website, which are the sole responsibility of its administrators and authors.",
+      "part8":"Contact: ",
+      "part9":"For any questions regarding this license statement or for additional authorization requests, please contact: ",
+      "part10":"Universidad del Valle de Guatemala https://www.uvg.edu.gt/ INFO@UVG.EDU.GT PBX: 2507-1500 / 2364-0336",
+      "part11":"Last Updated: ",
+      "part12":"This license statement was last updated on 1/07/2024. "
+    },
+    "manual": {
+      "title1": "Step 1: Welcome",
+      "description1": "This is a simple guide for using the application in the laboratory.",
+      "title2": "Step 2: Door Control",
+      "description2": "Press the lock button to open the electronic door, don't forget to close it once all students are inside.",
+      "title3": "Step 3: Light Control",
+      "description3": "Use the light buttons to turn on or off the lights divided into A (Front), B (Back), and C (LED strip).",
+      "title4": "Step 4: Done!",
+      "description4": "You have completed the step-by-step guide.",
+      "title5":"API",
+      "description5": "Upon completion, you can review our documentation to get an idea of the project's construction.",
+      "previous": "Previous",
+      "next": "Next",
+      "close": "Close",
+      "API": "API: Data Structure",
+      "MF": "Method/Function",
+      "Description": "Description"
+    }
+    ,
+    "privacyp": {
+      "policyp":"Privacy Policy",
+      "part1":"This Electronics Laboratory, its tools, equipment and/or content, as well as attachments, are for CONFIDENTIAL use and may contain PRIVILEGED information intended solely for the recipient, user, and/or interested party. If you have received any information from this by mistake, please do not copy or distribute it, nor take any action related to it as it is strictly PROHIBITED. Instead, please notify the sender and/or responsible person immediately and delete it from your system promptly. The opinions expressed as a result of work in this laboratory are the sole responsibility of the author and are not necessarily shared or endorsed by the administration of this laboratory, which does not assume any obligations through this message nor is responsible for its content. Similarly, the developers of the mentioned laboratory exempt themselves from any liability for the improper use of this, the non-compliance with the instructions and rules described herein and/or the commission of any offense or crime, with the person using and/or entering this Laboratory, its devices, web applications, and other components bearing DIRECT RESPONSIBILITY. It is expressly stated that in accordance with current national and international legislation, this Electronics Laboratory reserves the legal actions that correspond against anyone who illegitimately accesses it (directly, indirectly, through third parties, internally and/or externally) and violates its security."
+    }
+    ,
+    "signin": {
+      "signIn": "Sign In",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "emailPlaceholder": "youremail@uvg.edu.gt",
+      "signInButton": "Sign In",
+      "forgotPassword": "Forgot Password?",
+      "noAccount": "Don't have an account?",
+      "signInWithGoogle": "Sign In with Google",
+      "resetPasswordEmailSent": "We sent you an email with the link to reset your password",
+      "enterEmail": "Please enter your email",
+      "emailDomainError": "Only @uvg.edu.gt emails are allowed for sign-in or sign-up"
+    },
+    "signup": {
+      "signUp": "Sign Up",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "emailPlaceholder": "youremail@uvg.edu.gt",
+      "signUpButton": "Sign Up",
+      "haveAccount": "Do you have an account?"
+    }
+}

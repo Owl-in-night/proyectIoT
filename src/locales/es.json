@@ -1,0 +1,151 @@
+{
+  "sidebar": {
+    "signIn": "Iniciar sesión",
+    "signUp": "Registrarse",
+    "home": "Inicio",
+    "help": "Ayuda",
+    "aboutUs": "Acerca de nosotros",
+    "contactUs": "Contáctenos",
+    "license": "Licencia",
+    "manual": "Manual",
+    "privacyPolicy": "Política de privacidad",
+    "record": "Historial",
+    "settings": "Configuraciones",
+    "darkMode": "Modo oscuro",
+    "lightMode": "Modo claro",
+    "translate": "Traducir",
+    "chinese": "Chino",
+    "french": "Francés",
+    "hindi": "Hindi",
+    "spanish": "Español",
+    "english": "Inglés"
+  },
+  "app":{
+    "electronicLock": "Cerradura Electrónica",
+    "lock": "Bloquear",
+    "unlock": "Desbloquear",
+    "timeDateIncome": "Fecha y Hora de Ingreso",
+    "timeDateEgress": "Fecha y Hora de Salida",
+    "on": "Encender",
+    "off": "Apagar",
+    "loading": "Cargando",
+    "welcome": "¡Bienvenido!",
+    "error": "Hubo un problema al iniciar el servicio. Por favor, inténtalo de nuevo más tarde."
+  },
+  "footer": {
+    "copyright1": "© 2024 ",
+    "copyright2":"Electronic Lock™.",
+    "copyright3":" Todos los derechos reservados.",
+    "aboutUs": "Acerca de nosotros",
+    "privacyPolicy": "Política de privacidad",
+    "license": "Licencia",
+    "contactUs": "Contáctenos"
+  },
+  "navbar": {
+      "signIn": "Iniciar sesión",
+      "signUp": "Registrarse",
+      "home": "Inicio",
+      "help": "Ayuda",
+      "aboutUs": "Acerca de nosotros",
+      "contactUs": "Contáctenos",
+      "license": "Licencia",
+      "manual": "Manual",
+      "privacyPolicy": "Política de privacidad",
+      "record": "Historial",
+      "settings": "Configuraciones",
+      "darkMode": "Modo oscuro",
+      "lightMode": "Modo claro",
+      "translate": "Traducir",
+      "chinese": "Chino",
+      "french": "Francés",
+      "hindi": "Hindi",
+      "spanish": "Español",
+      "english": "Inglés"
+    },
+    "aboutus": {
+      "aboutusT":"Acerca de nosotros",
+      "aboutusText":"Somos estudiantes de la Universidad del Valle de Guatemala y estamos emocionados de presentar Electronic Lock, nuestro proyecto de TI. Este sistema representa nuestra dedicación a brindar una solución avanzada en seguridad y accesibilidad.",
+      "team":"Nuestro equipo",
+      "positionOne":"CEO (Director Ejecutivo)",
+      "positionTwo":"Desarrolladora",
+      "positionThree":"Desarrollador",
+      "teamButton":"Ver al equipo",
+      "up":"Subir"
+    },
+    "contactus": {
+      "contact":"Contáctenos",
+      "name":"Nombre",
+      "email":"Correo",
+      "subject":"Asunto",
+      "message":"Mensaje",
+      "sendmessage":"Enviar mensaje"
+    },
+    "record":{
+      "record":"Historial",
+      "timeDateIncome": "Fecha y Hora de Ingreso",
+      "timeDateEgress": "Fecha y Hora de Salida"
+    },
+    "copyR": {
+      "copyright":"Derechos de autor",
+      "part1":"El contenido de la aplicación web 'Electronic Lock' está protegido por derechos de autor. 'Electronic Lock' es una solución digital innovadora desarrollada por estudiantes de la Universidad Imaginaria. Este aviso establece los términos bajo los cuales puede usar y acceder al contenido y servicios ofrecidos por 'Electronic Lock'. Derechos de autor: Todos los derechos de autor y otros derechos de propiedad intelectual relacionados con 'Electronic Lock' son propiedad de los desarrolladores y creadores de la aplicación, estudiantes de la Universidad Imaginaria. Marcas comerciales: El nombre 'Electronic Lock' y su logotipo asociado son marcas registradas propiedad de los desarrolladores de la aplicación. Uso del contenido: Se permite ver, descargar y copiar el contenido de 'Electronic Lock' únicamente para uso personal y no comercial. Se prohíbe cualquier modificación, redistribución o reproducción del contenido sin permiso explícito de los propietarios de los derechos de autor. Renuncia de responsabilidad: Los desarrolladores de 'Electronic Lock' no son responsables por el uso inapropiado o ilegal del contenido o servicios ofrecidos en esta plataforma. Política de privacidad: Para obtener más información sobre cómo se recopilan, utilizan y protegen sus datos personales en 'Electronic Lock', consulte nuestra Política de privacidad. Contacto: Si tiene preguntas sobre este aviso de derechos de autor o desea solicitar permisos adicionales de uso, contáctenos en www.uvg.edu.gt. Última actualización: Este aviso de derechos de autor fue actualizado por última vez el 17 de junio de 2024."
+    }
+    ,
+    "license": {
+      "license":"Licencia",
+      "part1":"Este sitio web está operado bajo licencia y autorización de la Universidad del Valle de Guatemala. Todos los derechos reservados.",
+      "part2":"Declaración de Autorización: ",
+      "part3":"La Universidad del Valle de Guatemala (UVG) ha otorgado permiso expreso para el uso de su nombre e identidad institucional en esta página web. Este permiso incluye, pero no se limita a, la representación visual de la marca UVG y el uso de información relacionada con la institución en el contexto apropiado.",
+      "part4":"Propiedad Intelectual: ",
+      "part5":"Todos los derechos de propiedad intelectual relacionados con la marca y el contenido de la Universidad del Valle de Guatemala utilizados en esta página web son propiedad exclusiva de la UVG, a menos que se indique lo contrario. No se puede utilizar, copiar o distribuir ningún contenido de este sitio web sin la autorización previa por escrito de la UVG, excepto cuando la ley lo permita expresamente.",
+      "part6":"Descargo de Responsabilidad: ",
+      "part7":"La Universidad del Valle de Guatemala no se hace responsable del contenido o las opiniones expresadas en este sitio web, las cuales son responsabilidad exclusiva de sus administradores y autores.",
+      "part8":"Contacto: ",
+      "part9":"Para cualquier pregunta sobre esta declaración de licencia o para solicitar autorización adicional, por favor contacte a: ",
+      "part10":"Universidad del Valle de Guatemala https://www.uvg.edu.gt/ INFO@UVG.EDU.GT PBX: 2507-1500 / 2364-0336",
+      "part11":"Última Actualización: ",
+      "part12":"Esta declaración de licencia fue actualizada por última vez el 1/07/2024."
+    },
+    "manual": {
+      "title1": "Paso 1: Bienvenida",
+      "description1": "Esta es una guía sencilla para el uso de la aplicación en el laboratorio.",
+      "title2": "Paso 2: Control de Puerta",
+      "description2": "Presiona el botón del candado para abrir la puerta electrónica, no olvides cerrarla una vez que todos los estudiantes estén adentro.",
+      "title3": "Paso 3: Control de Luces",
+      "description3": "Usa los botones de los focos para encender o apagar las luces que están divididas en A (Adelante), B (Atrás) y C (Tira de luces led).",
+      "title4": "¡Listo!",
+      "description4": "Has completado la guía paso a paso.",
+      "title5":"API",
+      "description5": "Al finalizar puedes revisar nuestra documentación para poseer una noción de la construcción del proyecto.",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "close": "Cerrar",
+      "API": "API: Estructura de datos",
+      "MF": "Método/Función",
+      "Description": "Descripción"
+    }
+    ,
+    "privacyp": {
+      "policyp":"Política de privacidad",
+      "part1":"Este Laboratorio de Electrónica, sus herramientas, equipo y/o contenido, así como anexos son de uso CONFIDENCIAL y pueden contener información PRIVILEGIADA para manejo exclusivo de su destinatario, usuario y/o interesado. Si ha recibido algún tipo de información proveniente de este por error, no lo copie o distribuya, ni realice ninguna acción relacionada con el mismo puesto que está totalmente PROHIBIDO. En su lugar, por favor notifíquelo al remitente y/o encargado y bórrelo de su sistema en forma inmediata. Las opiniones expresadas como producto de las labores en dicho laboratorio son responsabilidad exclusiva de su autor y no son necesariamente compartidas o apoyadas por la administración de este, quien no asume a través de este mensaje obligaciones ni se responsabiliza del contenido de este. De igual forma, los desarrolladores del laboratorio referido se eximen de cualquier responsabilidad ante el uso inadecuado de este, el incumplimiento de las instrucciones y normas aquí descritas y/o la comisión de alguna falta o delito, teniendo RESPONSABILIDAD DIRECTA la persona que use y/o ingrese a este Laboratorio, sus dispositivos, aplicaciones web y demás componentes. Se manifiesta expresamente que de conformidad con la legislación nacional e internacional vigente y aplicable, este Laboratorio de Electrónica se reserva las acciones legales que correspondan contra todo aquel que acceda de forma ilegítima (de manera directa, indirecta, por terceros, interna y/o externamente) y vulnere la seguridad del mismo."
+    }
+    ,
+    "signin": {
+      "signIn": "Iniciar sesión",
+      "emailLabel": "Correo electrónico",
+      "passwordLabel": "Contraseña",
+      "emailPlaceholder": "tuemail@uvg.edu.gt",
+      "signInButton": "Iniciar sesión",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "noAccount": "¿No tienes una cuenta?",
+      "signInWithGoogle": "Iniciar sesión con Google",
+      "resetPasswordEmailSent": "Te hemos enviado un correo con el enlace para restablecer tu contraseña"
+    },
+    "signup": {
+      "signUp": "Registrarse",
+      "emailLabel": "Correo electrónico",
+      "passwordLabel": "Contraseña",
+      "emailPlaceholder": "tuemail@uvg.edu.gt",
+      "signUpButton": "Registrarse",
+      "haveAccount": "¿Ya tienes una cuenta?"
+    }
+}
