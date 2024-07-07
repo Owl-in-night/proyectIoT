@@ -158,6 +158,7 @@
       "passwordLabel": "密码",
       "emailPlaceholder": "youremail@uvg.edu.gt",
       "signUpButton": "注册",
-      "haveAccount": "已经有账号？"
+      "haveAccount": "已经有账号？",
+      "nameLabel":"全名"
     }
 }

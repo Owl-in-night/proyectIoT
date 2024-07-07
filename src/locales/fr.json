@@ -157,6 +157,7 @@
     "passwordLabel": "Mot de passe",
     "emailPlaceholder": "youremail@uvg.edu.gt",
     "signUpButton": "S'inscrire",
-    "haveAccount": "Vous avez déjà un compte ?"
+    "haveAccount": "Vous avez déjà un compte ?",
+    "nameLabel":"Nom complet"
   }
 }

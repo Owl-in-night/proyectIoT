@@ -157,7 +157,8 @@
     "passwordLabel": "पासवर्ड",
     "emailPlaceholder": "youremail@uvg.edu.gt",
     "signUpButton": "साइन अप करें",
-    "haveAccount": "क्या आपके पास खाता है?"
+    "haveAccount": "क्या आपके पास खाता है?",
+    "nameLabel":"पूरा नाम"
   }
   }
   

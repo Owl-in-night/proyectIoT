@@ -126,7 +126,7 @@ function AppWeb() {
             {/* Mostrar foto de perfil y nombre */}
             <div className="flex items-center space-x-4">
               <img
-                src={user?.photoURL || "https://via.placeholder.com/40"}
+                src={user?.photoURL || "https://i.ibb.co/fvbdcxW/13.png"}
                 alt="Profile"
                 className="w-10 h-10 rounded-full"
               />
