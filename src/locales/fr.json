@@ -81,9 +81,19 @@
     "sendmessage":"Envoyer un message"
   },
   "record":{
-    "record":"Enregistrer",
-    "timeDateIncome": "Date et heure d'entrée",
-    "timeDateEgress": "Date et heure de sortie"
+    "record": "Historique",
+    "records": "Enregistrements",
+    "income": "Revenu",
+    "egress": "Dépense",
+    "delete": "Supprimer",
+    "users": "Utilisateurs",
+    "user": "Utilisateur",
+    "email": "Courriel",
+    "lastLogin": "Dernière connexion",
+    "status": "Statut",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "noData": "Aucune donnée disponible"
   },
   "copyR": {
     "copyright":"Droits d'auteur",

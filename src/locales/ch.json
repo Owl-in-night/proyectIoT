@@ -81,9 +81,19 @@
       "sendmessage":"傳訊息"
     },
     "record":{
-      "record":"記錄",
-      "timeDateIncome": "時間和日期收入",
-      "timeDateEgress": "時間和日期出口"
+      "record": "記錄",
+    "records": "記錄",
+    "income": "收入",
+    "egress": "出口",
+    "delete": "刪除",
+    "users": "用戶",
+    "user": "用戶",
+    "email": "電子郵件",
+    "lastLogin": "最後登錄",
+    "status": "狀態",
+    "active": "活躍",
+    "inactive": "非活躍",
+    "noData": "暂无数据"
     },
     "copyR": {
       "copyright": "Copyright",

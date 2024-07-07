@@ -81,9 +81,19 @@
       "sendmessage":"मेसेज भेजें"
     },
     "record":{
-      "record":"अभिलेख",
-      "timeDateIncome": "समय और दिनांक आय",
-      "timeDateEgress": "समय और दिनांक निकास"
+      "record": "रिकॉर्ड",
+    "records": "रिकॉर्ड्स",
+    "income": "आय",
+    "egress": "निकासी",
+    "delete": "हटाएं",
+    "users": "उपयोगकर्ता",
+    "user": "उपयोगकर्ता",
+    "email": "ईमेल",
+    "lastLogin": "अंतिम लॉगिन",
+    "status": "स्थिति",
+    "active": "सक्रिय",
+    "inactive": "निष्क्रिय",
+    "noData": "अभी तक आपके पास कोई डेटा नहीं है"
     },
     "copyR": {
       "copyright":"कॉपीराईट",

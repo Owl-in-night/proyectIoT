@@ -10,7 +10,8 @@ import {
 import { SlLogout } from "react-icons/sl";
 import { useAuth } from "../context/authContext";
 import { useLanguage } from "../context/LanguageContext";
-
+import { db } from "../firebase"; // Asegúrate de importar tu instancia de db desde firebase.js
+import { collection, addDoc } from "firebase/firestore"; // Importar métodos necesarios
 function AppWeb() {
   const { language, translations } = useLanguage();
   const texts = translations[language];
@@ -39,18 +40,26 @@ function AppWeb() {
     setLoadingChapa(true);
     setError(null);
     try {
-      // const response = await axios.get("http://192.168.147.143:5000/lab/chapa/1");
-      // console.log("Response from /tests:", response.data);
-      // setLoadingChapa(response.data.h2);
+      const response = await axios.get("http://192.168.147.143:5000/lab/chapa/1");
+      console.log("Response from /lab/chapa/1:", response.data);
+      setLoadingChapa(response.data.h2);
       setLoadingChapa(false);
       const now = new Date();
       if (!ingreso || egreso) {
-        setIngreso(now);
+        const newIngreso = now;
+        setIngreso(newIngreso);
         setEgreso(null);
         setIconColorDoor('text-green-500');
+        await addDoc(collection(db, "app"), {
+          Income: newIngreso.toISOString()
+        });
       } else {
-        setEgreso(now);
+        const newEgreso = now;
+        setEgreso(newEgreso);
         setIconColorDoor('text-black');
+        await addDoc(collection(db, "app"), {
+          Egress: newEgreso.toISOString()
+        });
       }
     } catch (error) {
       console.error("Error del servicio:", error);

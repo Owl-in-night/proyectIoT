@@ -81,9 +81,19 @@
       "sendmessage":"Send Message"
     },
     "record":{
-      "record":"Record",
-      "timeDateIncome": "Time & Date Income",
-      "timeDateEgress": "Time & Date Egress"
+      "record": "Record",
+      "records": "Records",
+      "income": "Income",
+      "egress": "Egress",
+      "delete": "Delete",
+      "users": "Users",
+      "user": "User",
+      "email": "Email",
+      "lastLogin": "Last Login",
+      "status": "Status",
+      "active": "Active",
+      "inactive": "Inactive",
+      "noData": "No data available yet"
     },
     "copyR": {
       "copyright":"Copyright",
