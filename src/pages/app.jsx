@@ -51,14 +51,16 @@ function AppWeb() {
         setEgreso(null);
         setIconColorDoor('text-green-500');
         await addDoc(collection(db, "app"), {
-          Income: newIngreso.toISOString()
+          Income: newIngreso.toISOString(),
+          uid: user.uid, // Guardar el UID del usuario
         });
       } else {
         const newEgreso = now;
         setEgreso(newEgreso);
         setIconColorDoor('text-black');
         await addDoc(collection(db, "app"), {
-          Egress: newEgreso.toISOString()
+          Egress: newEgreso.toISOString(),
+          uid: user.uid, // Guardar el UID del usuario
         });
       }
     } catch (error) {
@@ -73,10 +75,10 @@ function AppWeb() {
     setLoadingLight(true);
     setError(null);
     try {
-      // const url = `http://192.168.147.143:5000/lab/${light}/${currentLightState ? 0 : 1}`;
-      // // console.log(`Sending request to ${url}`);
-      // const response = await axios.get(url);
-      // console.log(`Response from ${url}:`, response.data);
+      const url = `http://192.168.147.143:5000/lab/${light}/${currentLightState ? 0 : 1}`;
+      // console.log(`Sending request to ${url}`);
+      const response = await axios.get(url);
+      console.log(`Response from ${url}:`, response.data);
       setLoadingLight(false);
       setLight(!currentLightState);
       const newIcon = currentLightState ? faLightbulb : faBolt;

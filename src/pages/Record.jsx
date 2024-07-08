@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { auth, db } from "../firebase"; // Asegúrate de importar tu instancia de auth desde firebase.js
-import { collection, getDocs, query, orderBy, deleteDoc, doc, onSnapshot, updateDoc } from "firebase/firestore";
+import { collection, getDocs, query, orderBy, deleteDoc, doc, onSnapshot, updateDoc, where } from "firebase/firestore";
 import { differenceInMonths } from 'date-fns';
 
 function Record() {
@@ -39,10 +39,19 @@ function Record() {
         });
 
         // Register the beforeunload event to update user status to inactive
-        const handleBeforeUnload = async (event) => {
+        const handleBeforeUnload = (event) => {
           event.preventDefault();
-          await updateDoc(doc(db, "users", user.uid), {
+          event.returnValue = '';
+          // Temporarily set the user to inactive
+          updateDoc(doc(db, "users", user.uid), {
             disabled: true,
+          }).then(() => {
+            setTimeout(() => {
+              // Reactivate the user if they stay on the page
+              updateDoc(doc(db, "users", user.uid), {
+                disabled: false,
+              });
+            }, 100);
           });
         };
 
@@ -55,20 +64,22 @@ function Record() {
         setLastLogin(null);
       }
     });
-
     return () => unsubscribe();
   }, []);
 
   useEffect(() => {
     const fetchRecords = async () => {
       try {
-        const q = query(collection(db, "app"), orderBy("Income", "desc"));
-        const querySnapshot = await getDocs(q);
-        const recordsList = querySnapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data()
-        }));
-        setRecords(recordsList);
+        const user = auth.currentUser;
+        if (user) {
+          const q = query(collection(db, "app"), where("uid", "==", user.uid), orderBy("Income", "desc"));
+          const querySnapshot = await getDocs(q);
+          const recordsList = querySnapshot.docs.map((doc) => ({
+            id: doc.id,
+            ...doc.data()
+          }));
+          setRecords(recordsList);
+        }
       } catch (error) {
         setError("Error fetching records: " + error.message);
       }
@@ -122,7 +133,7 @@ function Record() {
               <h3 className="text-lg leading-6 font-semibold text-gray-900 dark:text-gray-100">{texts.record.records}</h3>
             </div>
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 hidden md:table">
                 <thead className="bg-gray-50 dark:bg-[#2f2f2f]">
                   <tr>
                     <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">{texts.record.income}</th>
@@ -154,53 +165,97 @@ function Record() {
                   )}
                 </tbody>
               </table>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:hidden">
+                {filteredRecords.map((record) => (
+                  <div key={record.id} className="bg-white dark:bg-[#1E1F20] p-4 rounded-lg shadow">
+                    <div className="text-sm text-gray-900 dark:text-gray-300">
+                      <strong>{texts.record.income}: </strong>{formatDateTime(record.Income)}
+                    </div>
+                    <div className="text-sm text-gray-900 dark:text-gray-300">
+                      <strong>{texts.record.egress}: </strong>{formatDateTime(record.Egress)}
+                    </div>
+                    <div className="text-right mt-2">
+                      <button
+                        className="text-red-600 dark:text-red-400 hover:text-red-900"
+                        onClick={() => handleDelete(record.id)}
+                      >
+                        {texts.record.delete}
+                      </button>
+                    </div>
+                  </div>
+                ))}
+                {filteredRecords.length === 0 && (
+                  <div className="col-span-1 text-center text-sm text-gray-500 dark:text-gray-300">
+                    {texts.record.noData}
+                  </div>
+                )}
+              </div>
             </div>
-            {error && <div className="text-red-500 mt-2">{error}</div>}
           </div>
-          <div className="mt-6 bg-white dark:bg-[#1E1F20] overflow-hidden shadow sm:rounded-lg">
+
+          <div className="mt-8 bg-white dark:bg-[#1E1F20] overflow-hidden shadow sm:rounded-lg">
             <div className="px-4 py-5 sm:px-6">
               <h3 className="text-lg leading-6 font-semibold text-gray-900 dark:text-gray-100">{texts.record.users}</h3>
             </div>
             <div className="overflow-x-auto">
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 hidden md:table">
                 <thead className="bg-gray-50 dark:bg-[#2f2f2f]">
                   <tr>
+                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">{texts.record.photo}</th>
                     <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">{texts.record.user}</th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">{texts.record.email}</th>
-                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">{texts.record.lastLogin}</th>
                     <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">{texts.record.status}</th>
+                    <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">{texts.record.lastLogin}</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white dark:bg-[#1E1F20] divide-y divide-gray-200 dark:divide-gray-700">
                   {users.map((user) => (
                     <tr key={user.uid}>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="flex items-center">
-                          <div className="flex-shrink-0 h-10 w-10">
-                            <img className="h-10 w-10 rounded-full" src={user.photoURL || "https://i.ibb.co/fvbdcxW/default-avatar.png"} alt={user.displayName || user.email} />
-                          </div>
-                          <div className="ml-4">
-                            <div className="text-sm font-medium text-gray-900 dark:text-gray-300">{user.displayName ||  user.email}</div>
-                          </div>
-                        </div>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-300">
+                        <img src={user.photoURL} alt="Profile" className="w-10 h-10 rounded-full" />
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="text-sm text-gray-900 dark:text-gray-300">{user.email}</div>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-300">{user.displayName || 'N/A'}</td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-300">
+                        <span className={`inline-block w-2.5 h-2.5 mr-2 rounded-full ${user.disabled ? 'bg-red-500' : 'bg-green-500'}`}></span>
+                        {user.disabled ? texts.record.inactive : texts.record.active}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="text-sm text-gray-900 dark:text-gray-300">{formatDateTime(user.lastSignInTime)}</div>
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
-                        <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${user.disabled ? 'bg-red-100 text-red-800' : 'bg-green-100 text-green-800'}`}>
-                          {user.disabled ? texts.record.inactive : texts.record.active}
-                        </span>
-                      </td>
+                      <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-300">{formatDateTime(user.lastSignInTime)}</td>
                     </tr>
                   ))}
+                  {users.length === 0 && (
+                    <tr>
+                      <td colSpan="4" className="px-6 py-4 text-sm text-gray-500 dark:text-gray-300 text-center">{texts.record.noData}</td>
+                    </tr>
+                  )}
                 </tbody>
               </table>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:hidden">
+                {users.map((user) => (
+                  <div key={user.uid} className="bg-white dark:bg-[#1E1F20] p-4 rounded-lg shadow">
+                    <div className="text-sm text-gray-900 dark:text-gray-300">
+                      <img src={user.photoURL} alt="Profile" className="w-10 h-10 rounded-full" />
+                    </div>
+                    <div className="text-sm text-gray-900 dark:text-gray-300">
+                      <strong>{texts.record.user}: </strong>{user.displayName || 'N/A'}
+                    </div>
+                    <div className="text-sm text-gray-900 dark:text-gray-300">
+                      <span className={`inline-block w-2.5 h-2.5 mr-2 rounded-full ${user.disabled ? 'bg-red-500' : 'bg-green-500'}`}></span>
+                      {user.disabled ? texts.record.inactive : texts.record.active}
+                    </div>
+                    <div className="text-sm text-gray-900 dark:text-gray-300">
+                      <strong>{texts.record.lastLogin}: </strong>{formatDateTime(user.lastSignInTime)}
+                    </div>
+                  </div>
+                ))}
+                {users.length === 0 && (
+                  <div className="col-span-1 text-center text-sm text-gray-500 dark:text-gray-300">
+                    {texts.record.noData}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
+
+          {error && <p className="mt-4 text-red-500 dark:text-red-400">{error}</p>}
         </div>
       </main>
     </div>
